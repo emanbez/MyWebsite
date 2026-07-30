@@ -25,3 +25,34 @@ nav a:hover {
 main {
   padding: 2rem;
 }
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-photo {
+  flex: 0 0 200px;
+}
+
+.photo-placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #555;
+}
+
+.about-text {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
