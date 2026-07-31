@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Laabri</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="books.html">Books</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Books I've Read</h2>
+
+    <form id="book-form">
+      <label for="title">Title</label>
+      <input type="text" id="title" required>
+
+      <label for="author">Author</label>
+      <input type="text" id="author" required>
+
+      <label for="rating">Rating (1-5)</label>
+      <input type="number" id="rating" min="1" max="5" required>
+
+      <button type="submit">Add Book</button>
+    </form>
+
+    <table id="book-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- rows added by JS -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
